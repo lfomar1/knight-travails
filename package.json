@@ -1,0 +1,24 @@
+{
+  "name": "knight-travails",
+  "version": "1.0.0",
+  "description": "Simple knight, on a chess moves!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lfomar1/knight-travails.git"
+  },
+  "author": "lucas omar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lfomar1/knight-travails/issues"
+  },
+  "homepage": "https://github.com/lfomar1/knight-travails#readme",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4"
+  }
+}

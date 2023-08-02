@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Title-Font";
+  src: url("./optimusprinceps/OptimusPrincepsSemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Button-Font";
+  src: url("./optimusprinceps/OptimusPrinceps.ttf") format("truetype");
+}
+:root {
+  --body-color: #f3f4f6;
+}
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--body-color);
+  gap: 100px;
+}
+h1 {
+  font-family: "Title-Font";
+  font-size: 60px;
+}
+button {
+  font-family: "Button-Font";
+  font-size: 22px;
+  cursor: pointer;
+  border: none;
+  padding: 10px 0;
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.place-knight {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#board {
+  margin-top: 2rem;
+  margin-left: 10rem;
+  width: 480px;
+  box-shadow: 1px 1px 9px 4px rgba(0, 0, 0, 0.54);
+}
+
+.piece-box {
+  height: 60px;
+  width: 60px;
+}
+
+.black-box {
+  background-color: rgb(68, 64, 60);
+}
+
+.white-box {
+  background-color: white;
+}
+
+.div-row {
+  display: flex;
+}
