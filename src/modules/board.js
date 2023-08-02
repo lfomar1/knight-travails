@@ -2,6 +2,7 @@ class Board {
   constructor() {
     this.alphas = "abcdefgh".split("");
     this.nums = "12345678".split("");
+    this.emptyCells = [];
   }
 
   newBoard() {
@@ -15,13 +16,13 @@ class Board {
         //Create a new cell
         let divData = document.createElement("div");
         let boxId = this.alphas[j] + this.nums[j];
-
         //If the num of cell coordinates is even
         //Then color of cell is white
         if ((i + j) % 2 == 0) {
           divData.setAttribute("class", "piece-box white-box");
           divData.setAttribute("id", boxId);
           divRow.appendChild(divData);
+          this.emptyCells.push(boxId);
         } else {
           // If the sum of cell coordinates is odd, then color the cell black
           // Create a class attribute for all black cells
@@ -29,6 +30,7 @@ class Board {
           divData.setAttribute("id", boxId);
           // Append the cell to its row
           divRow.appendChild(divData);
+          this.emptyCells.push(boxId);
         }
       }
       chessBoard.appendChild(divRow);
@@ -36,6 +38,11 @@ class Board {
     chessBoard.setAttribute("cellspacing", "0");
     chessBoard.setAttribute("id", "board");
     return chessBoard;
+  }
+
+  getEmptyCells() {
+    console.log(this.emptyCells);
+    return this.emptyCells;
   }
 }
 
